@@ -1,0 +1,18 @@
+
+创建初始化git仓库：
+git init
+git clone url
+
+查看git存储情况
+git status
+
+暂存文件
+git add ./
+git add 
+文件名
+
+提交
+git commit -m "注释"
+
+向远程仓库提交代码
+git push
