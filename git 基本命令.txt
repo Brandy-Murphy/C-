@@ -8,8 +8,7 @@ git status
 
 暂存文件
 git add ./
-git add 
-文件名
+git add 文件名
 
 提交
 git commit -m "注释"
