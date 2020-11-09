@@ -1,0 +1,4 @@
+﻿  fourth learn.c
+e:\code library\my foursh\my foursh\fourth learn.c(12): warning C4013: “strcmp”未定义；假设外部返回 int
+  my foursh.vcxproj -> E:\Code library\my foursh\Debug\my fourh.exe
+  my foursh.vcxproj -> E:\Code library\my foursh\Debug\my fourh.pdb (Partial PDB)
