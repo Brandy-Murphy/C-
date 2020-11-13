@@ -1,4 +1,0 @@
-﻿  first.c
-e:\code library\fifth\fifth\first.c(17): warning C4715: “is_perme”: 不是所有的控件路径都返回值
-  fifth.vcxproj -> E:\Code library\fifth\Debug\fifth.exe
-  fifth.vcxproj -> E:\Code library\fifth\Debug\fifth.pdb (Partial PDB)
