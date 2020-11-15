@@ -1,28 +1,106 @@
-
-////设计一个函数，利用递归方法来求字符串的长度
+//利用迭代 来求出第n个斐波拉契数
 #include <stdio.h>
-//把大事化小
-//len("hello")
-//1+len("ello")
-//1+1+len("llo")
-//1+1+1+len("lo")
-//1+1+1+1+len("o")
-//1+1+1+1+1+len("")
-int len(char*str)
+
+int fib(int n)
 {
-	if (*str != '\0')
-		return(1 + len(str + 1));
-	else
-		return 0;
+	int a = 1;
+	int b = 1;
+	int c = 1;
+	while (n > 2)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+		n--;
+	}
+	return c;
 }
 
 int main()
 {
-	char arr[] = "hello";
-	int x = len(arr);
-	printf("%d\n", x);
+	int n = 0;
+	int ret = 0;
+	scanf("%d", &n);
+	ret = fib(n);
+	printf ("%d\n", ret);
 	return 0;
 }
+
+
+
+////设计递归函数，求斐波拉锲数
+//#include <stdio.h>
+//int Fbi(int n) 
+//{
+//	if(n<=2)
+//		return 1;
+//	else 
+//		return Fbi(n - 1) + Fbi(n - 2);
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	int ret = 0;
+//	scanf("%d", &n);
+//	//TDD式设计思路--测试驱动开发    先描述怎么用，在去实现函数
+//	ret = Fbi(n);
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+////用递归方法求阶乘
+//#include <stdio.h>
+//
+//int fac(int n)
+//{
+//	if (n<=1)//如果n小于等于1，就返回1，否则结果就是0；
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return n*fac(n - 1);//n*(n-1)*(n-2)...*1
+//	}
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	int t = 0;
+//	scanf("%d", &n);
+//	t = fac(n);
+//	printf("%d\n", t);
+//	return 0;
+//}
+
+
+
+////设计一个函数，利用递归方法来求字符串的长度
+//#include <stdio.h>
+////把大事化小
+////len("hello")
+////1+len("ello")
+////1+1+len("llo")
+////1+1+1+len("lo")
+////1+1+1+1+len("o")
+////1+1+1+1+1+len("")
+//int len(char*str)
+//{
+//	if (*str != '\0')
+//		return(1 + len(str + 1));
+//	else
+//		return 0;
+//}
+//
+//int main()
+//{
+//	char arr[] = "hello";
+//	int x = len(arr);
+//	printf("%d\n", x);
+//	return 0;
+//}
 
 
 
