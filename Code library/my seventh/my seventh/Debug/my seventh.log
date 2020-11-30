@@ -1,3 +1,5 @@
 ﻿  study.c
+e:\code library\my seventh\my seventh\study.c(198): warning C4305: “初始化”: 从“int”到“char”截断
+e:\code library\my seventh\my seventh\study.c(200): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
   my seventh.vcxproj -> E:\Code library\my seventh\Debug\my seventh.exe
   my seventh.vcxproj -> E:\Code library\my seventh\Debug\my seventh.pdb (Partial PDB)
