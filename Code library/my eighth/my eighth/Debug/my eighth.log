@@ -1,0 +1,4 @@
+﻿  study.c
+e:\code library\my eighth\my eighth\study.c(17): warning C4133: “初始化”: 从“int *”到“char *”的类型不兼容
+  my eighth.vcxproj -> E:\Code library\my eighth\Debug\my eighth.exe
+  my eighth.vcxproj -> E:\Code library\my eighth\Debug\my eighth.pdb (Partial PDB)
