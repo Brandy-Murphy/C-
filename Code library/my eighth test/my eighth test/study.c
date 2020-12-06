@@ -192,3 +192,150 @@
 //	printf("count = %d;\n", count);
 //	return 0;
 //}
+
+
+//获取一个数的二进制奇数位与偶数位
+//#include <stdio.h>
+//void print(int m)
+//{
+//	int i = 0;
+//	printf("打印的为奇数位");
+//	for  (i = 30; i >=0; i-=2)
+//	{
+//		printf("%d  ", ((m >> i) & 1));
+//	}
+//	printf("\n");
+//	printf("打印的为偶数位");
+//	for (i = 31; i >= 1; i -= 2)
+//	{
+//		printf("%d  ", ((m >> i) & 1));
+//	}
+//	printf("\n");
+//}
+//int main()
+//{
+//	int m = 0;
+//	scanf("%d", &m);
+//	print(m);
+//	return 0;
+//}
+
+
+////利用指针打印数组
+//#include <stdio.h>
+//void print(int *arr, int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d  ", *(arr + i));
+//	}
+//	printf("\n");
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	print(arr,sz);
+//	return 0;
+//}
+
+
+////打印乘法口诀表
+//#include <stdio.h>
+//void table(int n)
+//{
+//	int i = 0;
+//	int j = 0;
+//	for ( i =1 ; i < n; i++)
+//	{
+//		for (j = 1; j <= i; j++)
+//		{
+//			printf("%d * %d = %-3d   ", i, j, i*j);
+//		}
+//		printf("\n");
+//	}
+//
+//}
+//int main()
+//{
+//	int i = 0;
+//	scanf("%d", &i);
+//	table(i);
+//	return 0;
+//}
+
+
+
+//将一个字符串的内容倒放 abcdef=fedcba
+//#include <stdio.h>
+//#include <string.h>
+//void string(char arr[])
+//{
+//	int l = 0;
+//	char tmp = 0;
+//	int r = strlen(arr) - 1;
+//	while (l<r)
+//	{
+//		tmp = arr[l];
+//		arr[l] = arr[r];
+//		arr[r] = tmp;
+//		l++;
+//		r--;
+//	}
+//}
+//int main()
+//{
+//	char arr[] ="abcdefg" ;
+//	string(arr);
+//	printf("%s\n", arr);
+//	return 0;
+//}
+
+
+//利用递归 将一个整数的每个数进行相加 1729 = 19
+//#include <stdio.h>
+//int digitsum(unsigned int num)
+//{
+//	if (num > 9)
+//	{
+//		return digitsum(num / 10) + num % 10;
+//	}
+//	else
+//	{
+//		return num;
+//	}
+//}
+//int main()
+//{
+//	unsigned int num = 0;
+//	scanf("%d", &num);
+//	int ret = digitsum(num);
+//	printf("ret=%d\n", ret);
+//	return 0;
+//}
+
+
+//求一个数的次方
+//#include <stdio.h>
+//double pow(int a,int b)
+//{
+//	if (b < 0)
+//		return (1.0 / (pow(a, -b)));
+//
+//	else if (b == 0)
+//		return 1;
+//
+//	else
+//		return a*pow(a, b - 1);
+//
+//}
+//int main()
+//{
+//	int i = 0;
+//	int n = 0;
+//	scanf("%d%d", &i, &n);
+//	double ret = pow(i, n);
+//	printf("%lf\n", ret);
+//	return 0;
+//}
