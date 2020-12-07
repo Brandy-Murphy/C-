@@ -1,0 +1,35 @@
+1.项目 ->属性 -> c/c++ -> 预处理器 -> 点击预处理器定义，加入_CRT_SECURE_NO_WARNINGS
+
+
+结构体的声明
+
+  结构体的基础知识
+    结构体是一些值的集合 这些值被称为成员变量 每个成员可以是不同变量
+    可以是数组 指针 标量 甚至是结构体 
+////声明一个结构体
+//#include <stdio.h>
+////struct 结构体关键字  stu 结构体标签 strpuct stu 结构体类型 
+//struct stu
+//{
+//	char name[20];
+//	short age;
+//	char tele;       //此时并不占空间
+//	char sex[5];
+//}s1,s2,s3;//s1,s2,s3  创建了三个全局结构体变量  如果是在函数内部创建 则为局部变量
+//
+//typedef struct stu  //typedef 将结构体重新命名  大括号后写上新名字 
+//                    //可以直接使用stu来创建结构体变量
+//{
+//	char name[20];
+//	short age;
+//	char tele;       
+//	char sex[5];
+//}stu;//者的stu还是属于类型  为了方便创建变量
+//
+//
+//int main()
+//{
+//	struct stu s;//局部的结构体变量创建 
+//	stu s1;
+//	return 0;
+//}
